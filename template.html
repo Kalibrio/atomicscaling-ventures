@@ -280,6 +280,17 @@
     .form-disclaimer { grid-column: 1 / -1; font-size: 0.8rem; color: var(--cream-muted); max-width: 56em; }
     .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
+    /* Endorsements */
+    .endorsement-grid { columns: 3; column-gap: 20px; margin-top: 2.2rem; }
+    .e-card { break-inside: avoid; margin-bottom: 20px; display: flex; flex-direction: column; gap: 12px; }
+    .e-quote { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--cream-dim); line-height: 1.55; }
+    .e-quote::before { content: '“'; color: var(--green); }
+    .e-quote::after { content: '”'; color: var(--green); }
+    .e-name { font-family: var(--mono); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cream); }
+    .e-title { font-size: 0.8rem; color: var(--cream-muted); margin-top: 2px; }
+    @media (max-width: 1000px) { .endorsement-grid { columns: 2; } }
+    @media (max-width: 640px) { .endorsement-grid { columns: 1; } }
+
     /* About */
     .about-inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: 56px; align-items: start; }
     .about-photo img { border: 1px solid var(--border); border-radius: 4px; }
@@ -504,8 +515,23 @@
       </div>
     </section>
 
+    <!-- 5b · Endorsements -->
+    <section class="section-alt" id="endorsements">
+      <div class="container">
+        <p class="eyebrow">Endorsements</p>
+        <h2>What founders and investors <em>say</em>.</h2>
+        <p class="lede">{{ENDORSEMENTS_NOTE}}</p>
+        <div class="endorsement-grid">
+{{ENDORSEMENTS}}
+        </div>
+        <p style="margin-top: 2rem;">
+          <a href="https://www.atomicscaling.com/testimonials" class="btn-secondary" rel="noopener">Read all 54 endorsements →</a>
+        </p>
+      </div>
+    </section>
+
     <!-- 6 · For Founders -->
-    <section class="section-alt" id="founders">
+    <section id="founders">
       <div class="container narrow">
         <p class="eyebrow">For Founders</p>
         <h2>Pitch your <em>company</em>.</h2>
@@ -586,7 +612,7 @@
     </section>
 
     <!-- 7 · For Investors & Partners -->
-    <section id="partners">
+    <section class="section-alt" id="partners">
       <div class="container narrow">
         <p class="eyebrow">For Investors &amp; Partners</p>
         <h2>Invest and build <em>alongside us</em>.</h2>
@@ -643,7 +669,7 @@
     </section>
 
     <!-- 8 · About & Team -->
-    <section class="section-alt" id="about">
+    <section id="about">
       <div class="container">
         <p class="eyebrow">About &amp; Team</p>
         <h2>The people <em>behind the cheques</em>.</h2>
@@ -662,7 +688,7 @@
         <span class="brand-tag">Ventures</span>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>
+        <a href="#partners">Contact</a>
         <a href="https://www.linkedin.com/in/ludovicbodin/" rel="noopener">LinkedIn</a>
         <a href="https://www.atomicscaling.com" rel="noopener">atomicscaling.com</a>
         <a href="privacy.html">Privacy Policy</a>

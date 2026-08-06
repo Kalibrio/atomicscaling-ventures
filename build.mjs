@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const content = JSON.parse(readFileSync('content.json', 'utf8'));
 const template = readFileSync('template.html', 'utf8');
-const { site, stats, portfolio, undisclosedNote, advisoryClients, team, criteria, legal } = content;
+const { site, stats, portfolio, undisclosedNote, advisoryClients, endorsements, endorsementsNote, team, criteria, legal } = content;
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -56,6 +56,18 @@ const advisoryHtml = advisoryClients
 
 const criteriaHtml = criteria.map((c) => `          <li>${esc(c)}</li>`).join('\n');
 
+const endorsementsHtml = endorsements
+  .map(
+    (e) => `          <figure class="card e-card">
+            <blockquote class="e-quote">${esc(e.quote)}</blockquote>
+            <figcaption>
+              <p class="e-name">${esc(e.name)}</p>
+              <p class="e-title">${esc(e.title)}</p>
+            </figcaption>
+          </figure>`
+  )
+  .join('\n');
+
 const teamHtml = team
   .map(
     (t) => `          <div class="about-photo reveal">
@@ -91,7 +103,6 @@ const jsonld = JSON.stringify({
   url: site.url,
   logo: `${site.url}/assets/og.png`,
   description: site.description,
-  email: site.contactEmail,
   founder: {
     '@type': 'Person',
     name: 'Ludovic Bodin',
@@ -112,6 +123,8 @@ const out = template
   .replaceAll('{{UNDISCLOSED}}', esc(undisclosedNote))
   .replaceAll('{{ADVISORY}}', advisoryHtml)
   .replaceAll('{{CRITERIA}}', criteriaHtml)
+  .replaceAll('{{ENDORSEMENTS}}', endorsementsHtml)
+  .replaceAll('{{ENDORSEMENTS_NOTE}}', esc(endorsementsNote))
   .replaceAll('{{TEAM}}', teamHtml)
   .replaceAll('{{YEAR}}', String(new Date().getFullYear()))
   .replaceAll('{{LEGAL_LINE}}', esc(legalLine));
