@@ -114,72 +114,86 @@
     {
       "quote": "We applied Atomic Scaling to build & scale Gigaverse to over $10M in annualised revenue in our first 6 months, with a team of less than 10 people. When you eliminate coordination overhead and move lightning fast, building without unnecessary bureaucracy, a small team becomes a massive competitive advantage.",
       "name": "Dith",
-      "title": "Co-Founder of Gigaverse"
+      "title": "Co-Founder of Gigaverse",
+      "photo": "assets/endorsers/dith.png"
     },
     {
       "quote": "I am happy to see all these learnings combined in one book to help future entrepreneurs, not just in the games industry but all industries.",
       "name": "Ilkka Paananen",
-      "title": "Co-founder & CEO of Supercell"
+      "title": "Co-founder & CEO of Supercell",
+      "photo": "assets/endorsers/ilkka-paananen.png"
     },
     {
       "quote": "If a small team from Finland can launch a global phenomenon like Angry Birds and get over 5 billion downloads, then you can do it too! Ludovic Bodin's Atomic Scaling is your ultimate playbook for unlocking explosive growth in your business. Get ready to level up, make history, and reach new heights!",
       "name": "Peter Vesterbacka",
-      "title": "Former Mighty Eagle at Rovio, creators of Angry Birds"
+      "title": "Former Mighty Eagle at Rovio, creators of Angry Birds",
+      "photo": "assets/endorsers/peter-vesterbacka.png"
     },
     {
       "quote": "Ludovic Bodin's Atomic Scaling provides an insightful framework and invaluable lessons that shed light on how gamers are driving the future of entertainment, technology, and society.",
       "name": "Kevin Lin",
-      "title": "Co-founder of Twitch"
+      "title": "Co-founder of Twitch",
+      "photo": "assets/endorsers/kevin-lin.png"
     },
     {
       "quote": "Atomic Scaling by Ludovic Bodin - I want all the golden nuggets I can to help founders raise less or avoid VCs entirely. This Book has some killer actionable ideas in it.⭐",
       "name": "Chris Tottman",
-      "title": "Founding General Partner of NOTION.vc ($1B AUM)"
+      "title": "Founding General Partner of NOTION.vc ($1B AUM)",
+      "photo": "assets/endorsers/chris-tottman.png"
     },
     {
       "quote": "In Atomic Scaling, Ludovic Bodin shares insightful lessons from the games industry and a practical playbook to inspire games companies and beyond to stay small and achieve outsize global impact.",
       "name": "Doug McCracken",
-      "title": "Partner & Head of Marketing, A16Z GAMES"
+      "title": "Partner & Head of Marketing, A16Z GAMES",
+      "photo": "assets/endorsers/doug-mccracken.png"
     },
     {
       "quote": "Atomic Scaling is a breath of fresh air in a world that has gone crazy for startups. In contrast to the Blitzscaling approach that has bred swift but precarious growth, this book lays out the foundations for a leaner and more sustainable way to scale hyper-growth.",
       "name": "Oliver Lo",
-      "title": "Former VP Marketing at Sequoia Capital"
+      "title": "Former VP Marketing at Sequoia Capital",
+      "photo": "assets/endorsers/oliver-lo.png"
     },
     {
       "quote": "Atomic Scaling illuminates the path to unicorn status for startups, revealing many growth secrets of the video game industry.",
       "name": "Jason Zhao",
-      "title": "Kleiner Perkins Caufield & Byers"
+      "title": "Kleiner Perkins Caufield & Byers",
+      "photo": "assets/endorsers/jason-zhao.png"
     },
     {
       "quote": "A must-have playbook for anyone seeking to redefine the rules of the game. 'Atomic Scaling' offers powerful insights from the gaming industry's unprecedented success, providing a roadmap for achieving breakthrough results.",
       "name": "Verne Harnish",
-      "title": "Founder of Entrepreneurs' Organization (EO) & Scaling Up"
+      "title": "Founder of Entrepreneurs' Organization (EO) & Scaling Up",
+      "photo": "assets/endorsers/verne-harnish.png"
     },
     {
       "quote": "Atomic Scaling equips leaders with a framework to sharpen foresight and navigate scaling challenges effectively.",
       "name": "Risto Siilasmaa",
-      "title": "Former Chairman of Nokia and founder of F-Secure"
+      "title": "Former Chairman of Nokia and founder of F-Secure",
+      "photo": "assets/endorsers/risto-siilasmaa.png"
     },
     {
       "quote": "I love seeing small teams build big things. This book embodies the idea of leverage and provides tactics for leaders looking to do a lot with a little.",
       "name": "Eric Jorgenson",
-      "title": "Bestselling author of \"The Almanack of Naval Ravikant\""
+      "title": "Bestselling author of \"The Almanack of Naval Ravikant\"",
+      "photo": "assets/endorsers/eric-jorgenson.png"
     },
     {
       "quote": "The operators who actually figure out scale tend to share one trait: they've stopped confusing complexity with capability. Atomic Scaling earns its place by showing founders and studio leaders exactly where organizations quietly break under growth - and how to build the discipline that prevents momentum from becoming drag.",
       "name": "Andrew Sheppard",
-      "title": "Managing Director, Transcend | Former President of Studios, Kabam"
+      "title": "Managing Director, Transcend | Former President of Studios, Kabam",
+      "photo": "assets/endorsers/andrew-sheppard.png"
     },
     {
       "quote": "Atomic Scaling is a game-changing asset that offers effective strategies for achieving exponential growth and success in the digital age.",
       "name": "Alain Crozier",
-      "title": "Former CEO of Microsoft, China"
+      "title": "Former CEO of Microsoft, China",
+      "photo": "assets/endorsers/alain-crozier.png"
     },
     {
       "quote": "In Atomic Scaling, Ludovic Bodin shows how boosting talent density, team alignment, and efficiency can overcome capital limits and achieve more with less.",
       "name": "Xiang Wang",
-      "title": "Former President at Xiaomi"
+      "title": "Former President at Xiaomi",
+      "photo": "assets/endorsers/xiang-wang.png"
     }
   ],
   "team": [

@@ -53,9 +53,12 @@ const endorsementsHtml = endorsements
   .map(
     (e) => `          <figure class="card e-card">
             <blockquote class="e-quote">${esc(e.quote)}</blockquote>
-            <figcaption>
-              <p class="e-name">${esc(e.name)}</p>
-              <p class="e-title">${esc(e.title)}</p>
+            <figcaption class="e-foot">
+              ${e.photo ? `<img class="e-avatar" src="${esc(e.photo)}" alt="Portrait of ${esc(e.name)}" width="46" height="46" loading="lazy" />` : ''}
+              <div class="e-person">
+                <p class="e-name">${esc(e.name)}</p>
+                <p class="e-title">${esc(e.title)}</p>
+              </div>
             </figcaption>
           </figure>`
   )
