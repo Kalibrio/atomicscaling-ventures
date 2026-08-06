@@ -1,6 +1,5 @@
 {
   "_comment": "Source of truth for ventures.atomicscaling.com. Edit this file, run `node build.mjs`, commit. Every entry here must be verifiable — no invented names, metrics or partnerships. Use \"TODO\" strings for missing data; the build fails if a TODO would be rendered publicly.",
-
   "site": {
     "url": "https://ventures.atomicscaling.com",
     "title": "Atomic Scaling Ventures — Backing Ambitious Founders from Seed to Scale",
@@ -10,16 +9,32 @@
     "parentSite": "https://www.atomicscaling.com",
     "formEndpoint": "https://www.atomicscaling.com/api/subscribe"
   },
-
   "stats": [
-    { "figure": "2", "label": "Unicorns in portfolio" },
-    { "figure": "1", "label": "Portfolio IPO" },
-    { "figure": "3", "label": "Companies founded" },
-    { "figure": "2", "label": "Founder exits" },
-    { "figure": "3", "label": "Continents invested" },
-    { "figure": "20+", "label": "Years operating" }
+    {
+      "figure": "2",
+      "label": "Unicorns in portfolio"
+    },
+    {
+      "figure": "1",
+      "label": "Portfolio IPO"
+    },
+    {
+      "figure": "3",
+      "label": "Companies founded"
+    },
+    {
+      "figure": "2",
+      "label": "Founder exits"
+    },
+    {
+      "figure": "3",
+      "label": "Continents invested"
+    },
+    {
+      "figure": "20+",
+      "label": "Years operating"
+    }
   ],
-
   "portfolio": [
     {
       "company": "Chiliz",
@@ -94,16 +109,6 @@
       "outcome": ""
     }
   ],
-
-  "undisclosedNote": "The portfolio also includes undisclosed positions in algorithmic trading and e-commerce fashion. Some investments are confidential at the founders’ request.",
-
-  "advisoryClients": [
-    { "name": "Mercedes-Benz", "note": "digital transformation" },
-    { "name": "SuySing", "note": "$1B-revenue retail scale-up" },
-    { "name": "Cur8", "note": "blockchain & art" },
-    { "name": "Synchronous", "note": "algorithmic trading" }
-  ],
-
   "endorsementsNote": "Endorsements are for Atomic Scaling, the book and method behind our acceleration work.",
   "endorsements": [
     {
@@ -177,7 +182,6 @@
       "title": "Former President at Xiaomi"
     }
   ],
-
   "team": [
     {
       "name": "Ludovic Bodin",
@@ -188,7 +192,6 @@
       "bio": "Ludovic Bodin is a three-time entrepreneur, two-time unicorn investor and author of Atomic Scaling. He founded three companies in e-commerce, travel and gaming — AuRestaurant.com, Macau.com and Cmune, whose UberStrike reached 30 million players — exiting two. As an investor he was first investor and board member at Chiliz (exited at $1.5B) and an early backer of ASIG ($2.5B), with a portfolio spanning Silicon Valley, Europe and Asia. He is the creator of the 3P3R Method® and founder of BOBIC Generational Wealth."
     }
   ],
-
   "criteria": [
     "Seed to Series A technology companies",
     "Scalable digital business models — software, platforms, marketplaces and digitally-distributed products",
@@ -196,7 +199,6 @@
     "Founders open to operating with the Atomic Scaling 3P3R method",
     "North America, Europe and Asia"
   ],
-
   "legal": {
     "entityName": "TODO-legal-entity-name",
     "registration": "TODO-registration-number-and-jurisdiction",

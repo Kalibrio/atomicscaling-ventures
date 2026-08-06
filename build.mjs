@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const content = JSON.parse(readFileSync('content.json', 'utf8'));
 const template = readFileSync('template.html', 'utf8');
-const { site, stats, portfolio, undisclosedNote, advisoryClients, endorsements, endorsementsNote, team, criteria, legal } = content;
+const { site, stats, portfolio, endorsements, endorsementsNote, team, criteria, legal } = content;
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -46,13 +46,6 @@ const portfolioHtml = portfolio
           </article>`;
   })
   .join('\n');
-
-const advisoryHtml = advisoryClients
-  .map((c, i) => {
-    const sep = i === advisoryClients.length - 1 ? '' : i === advisoryClients.length - 2 ? ' and ' : ', ';
-    return `<strong>${esc(c.name)}</strong> (${esc(c.note)})${sep}`;
-  })
-  .join('');
 
 const criteriaHtml = criteria.map((c) => `          <li>${esc(c)}</li>`).join('\n');
 
@@ -120,8 +113,6 @@ const out = template
   .replaceAll('{{JSONLD}}', jsonld)
   .replaceAll('{{STATS}}', statsHtml)
   .replaceAll('{{PORTFOLIO}}', portfolioHtml)
-  .replaceAll('{{UNDISCLOSED}}', esc(undisclosedNote))
-  .replaceAll('{{ADVISORY}}', advisoryHtml)
   .replaceAll('{{CRITERIA}}', criteriaHtml)
   .replaceAll('{{ENDORSEMENTS}}', endorsementsHtml)
   .replaceAll('{{ENDORSEMENTS_NOTE}}', esc(endorsementsNote))
