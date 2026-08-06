@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atomic Scaling Ventures — Backing Ambitious Founders from Seed to Scale</title>
+  <meta name="description" content="Atomic Scaling Ventures is an angel investor and startup accelerator backing technology founders from seed to Series A — with capital, the Atomic Scaling operating method, and an operator network across North America, Europe and Asia." />
+  <link rel="canonical" href="https://ventures.atomicscaling.com/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Atomic Scaling Ventures" />
+  <meta property="og:title" content="Atomic Scaling Ventures — Backing Ambitious Founders from Seed to Scale" />
+  <meta property="og:description" content="Atomic Scaling Ventures is an angel investor and startup accelerator backing technology founders from seed to Series A — with capital, the Atomic Scaling operating method, and an operator network across North America, Europe and Asia." />
+  <meta property="og:url" content="https://ventures.atomicscaling.com/" />
+  <meta property="og:image" content="https://ventures.atomicscaling.com/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Atomic Scaling Ventures — Backing Ambitious Founders from Seed to Scale" />
+  <meta name="twitter:description" content="Atomic Scaling Ventures is an angel investor and startup accelerator backing technology founders from seed to Series A — with capital, the Atomic Scaling operating method, and an operator network across North America, Europe and Asia." />
+  <meta name="twitter:image" content="https://ventures.atomicscaling.com/assets/og.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Atomic Scaling Ventures","url":"https://ventures.atomicscaling.com","logo":"https://ventures.atomicscaling.com/assets/og.png","description":"Atomic Scaling Ventures is an angel investor and startup accelerator backing technology founders from seed to Series A — with capital, the Atomic Scaling operating method, and an operator network across North America, Europe and Asia.","email":"ludovic@atomicscaling.com","founder":{"@type":"Person","name":"Ludovic Bodin","sameAs":["https://www.linkedin.com/in/ludovicbodin/","https://www.atomicscaling.com/about-me"]},"sameAs":["https://www.linkedin.com/in/ludovicbodin/","https://www.atomicscaling.com"]}</script>
+  <!-- Privacy-conscious analytics placeholder (disabled by default).
+       To enable, uncomment ONE of the following and update the domain/site id:
+  <script defer data-domain="ventures.atomicscaling.com" src="https://plausible.io/js/script.js"></script>
+  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  -->
+  <style>
+    :root {
+      --bg: #080808;
+      --bg-raise: #0e0e0d;
+      --green: #3dd68c;
+      --green-light: #65e3a8;
+      --green-dim: rgba(61, 214, 140, 0.12);
+      --green-border: rgba(61, 214, 140, 0.22);
+      --cream: #f0ede6;
+      --cream-dim: rgba(240, 237, 230, 0.66);
+      --cream-muted: rgba(240, 237, 230, 0.48);
+      --border: rgba(240, 237, 230, 0.09);
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Outfit', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, monospace;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--green);
+      outline-offset: 2px;
+    }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    .narrow { max-width: 780px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: var(--green); color: #060606; padding: 10px 18px;
+      font-family: var(--mono); font-size: 0.8rem; text-decoration: none;
+    }
+    .skip-link:focus { left: 0; }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+      font-weight: 600;
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+    }
+    h1 em, h2 em { font-style: italic; color: var(--green); }
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 1.1rem;
+    }
+    .lede { font-size: 1.08rem; color: var(--cream-dim); margin-bottom: 1.2rem; max-width: 44em; }
+    .lede strong { color: var(--cream); font-weight: 500; }
+
+    .btn-primary, .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--green);
+      color: #060606;
+      font-weight: 600;
+      border: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--cream-dim);
+      font-weight: 400;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: rgba(240, 237, 230, 0.25); color: var(--cream); }
+
+    section { padding: 96px 0; }
+    .section-alt { background: var(--bg-raise); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+    .card {
+      background: var(--bg-raise);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 28px;
+      transition: border-color 0.25s;
+    }
+    .card:hover { border-color: var(--green-border); }
+
+    /* Header */
+    .site-header {
+      background: rgba(8, 8, 8, 0.92);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner { display: flex; align-items: center; gap: 28px; padding-top: 15px; padding-bottom: 15px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand-logo { height: 30px; width: auto; image-rendering: pixelated; }
+    .brand-name { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; letter-spacing: 0.01em; }
+    .brand-tag {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--green);
+      border: 1px solid var(--green-border);
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+    .site-nav { display: flex; gap: 22px; margin-left: auto; }
+    .site-nav a {
+      color: var(--cream-dim);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .site-nav a:hover { color: var(--green); }
+    .btn-nav { padding: 0.5rem 1rem; font-size: 0.72rem; }
+
+    /* Hero */
+    .hero { padding: 116px 0 90px; }
+    .hero-inner { max-width: 880px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin: 1.9rem 0 1.2rem; }
+    .hero-note { font-family: var(--mono); font-size: 0.75rem; color: var(--cream-muted); letter-spacing: 0.05em; margin-top: 1rem; }
+
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-top: 2.6rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.8rem;
+    }
+    .stat { display: flex; flex-direction: column; }
+    .stat-figure { font-family: var(--serif); font-size: 1.9rem; font-weight: 600; color: var(--green); line-height: 1.1; }
+    .stat-label { font-size: 0.78rem; color: var(--cream-muted); }
+
+    /* Focus */
+    .focus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 2.2rem; }
+    .focus-card { display: flex; flex-direction: column; gap: 10px; }
+    .focus-num { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); }
+    .focus-card p { font-size: 0.93rem; color: var(--cream-dim); }
+
+    /* Track record */
+    .record-inner { display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: start; }
+    .record-list { list-style: none; display: flex; flex-direction: column; margin-top: 1.6rem; }
+    .record-list li {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--cream-dim);
+    }
+    .record-list .k {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--green);
+      padding-top: 3px;
+    }
+    .record-aside { position: sticky; top: 110px; display: flex; flex-direction: column; gap: 16px; }
+    .record-aside .card p { font-size: 0.92rem; color: var(--cream-dim); }
+    .record-links { display: flex; flex-direction: column; gap: 8px; margin-top: 0.6rem; }
+    .record-links a { color: var(--green); font-size: 0.9rem; text-decoration: none; }
+    .record-links a:hover { text-decoration: underline; }
+
+    /* Portfolio */
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 2.2rem; }
+    .p-card { display: flex; flex-direction: column; gap: 8px; }
+    .p-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .p-name { font-family: var(--serif); font-size: 1.45rem; font-weight: 600; }
+    .p-meta { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream-muted); }
+    .p-sector { font-size: 0.9rem; color: var(--cream-dim); }
+    .p-role {
+      font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--green); margin-top: 2px;
+    }
+    .p-outcome { font-size: 0.9rem; color: var(--cream); font-weight: 400; border-top: 1px solid var(--border); padding-top: 10px; margin-top: 6px; }
+    .portfolio-note { margin-top: 1.8rem; font-size: 0.88rem; color: var(--cream-muted); max-width: 52em; }
+    .advisory-note { margin-top: 0.4rem; font-size: 0.88rem; color: var(--cream-muted); max-width: 52em; }
+    .advisory-note strong { color: var(--cream-dim); font-weight: 500; }
+
+    /* How we help */
+    .help-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 2.2rem; }
+    .help-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .help-card p { font-size: 0.92rem; color: var(--cream-dim); }
+
+    /* Forms */
+    .form-wrap { margin-top: 2.4rem; }
+    .criteria-list { list-style: none; margin: 1.4rem 0 0; display: flex; flex-direction: column; gap: 10px; }
+    .criteria-list li { display: flex; gap: 12px; font-size: 0.97rem; color: var(--cream-dim); }
+    .criteria-list li::before { content: '→'; color: var(--green); flex-shrink: 0; }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field-full { grid-column: 1 / -1; }
+    label { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream-dim); }
+    label .req { color: var(--green); }
+    input, select, textarea {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--cream);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 300;
+      padding: 0.7rem 0.9rem;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+    select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23f0ede6' fill-opacity='0.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+    input:hover, select:hover, textarea:hover { border-color: rgba(240, 237, 230, 0.2); }
+    input:focus, select:focus, textarea:focus { border-color: var(--green-border); outline: none; }
+    textarea { min-height: 110px; resize: vertical; }
+    .form-actions { grid-column: 1 / -1; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 0.4rem; }
+    .form-disclaimer { grid-column: 1 / -1; font-size: 0.8rem; color: var(--cream-muted); max-width: 56em; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+    /* About */
+    .about-inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: 56px; align-items: start; }
+    .about-photo img { border: 1px solid var(--border); border-radius: 4px; }
+    .about-name { font-family: var(--serif); font-size: 1.7rem; font-weight: 600; margin-top: 1.1rem; }
+    .about-title { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); margin-bottom: 0.2rem; }
+    .about-links { display: flex; gap: 16px; margin-top: 0.8rem; }
+    .about-links a { color: var(--green); font-size: 0.9rem; text-decoration: none; }
+    .about-links a:hover { text-decoration: underline; }
+    .about-bio p { font-size: 1rem; color: var(--cream-dim); margin-bottom: 1rem; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 64px 0 48px; }
+    .footer-inner { display: flex; flex-direction: column; gap: 26px; align-items: flex-start; }
+    .footer-brand { display: flex; align-items: center; gap: 10px; }
+    .footer-nav { display: flex; flex-wrap: wrap; gap: 20px; }
+    .footer-nav a { color: var(--cream-dim); text-decoration: none; font-size: 0.85rem; }
+    .footer-nav a:hover { color: var(--green); }
+    .footer-disclaimer { font-size: 0.78rem; color: var(--cream-muted); max-width: 64em; line-height: 1.65; }
+    .footer-note { color: var(--cream-muted); font-size: 0.78rem; font-family: var(--mono); }
+    .footer-note a { color: var(--cream-dim); }
+
+    /* Reveal motion — subtle, disabled for reduced-motion users */
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    @media (max-width: 900px) {
+      .site-nav { display: none; }
+      .header-inner { gap: 12px; justify-content: space-between; }
+      .brand-logo { height: 22px; }
+      .brand-tag { font-size: 0.56rem; padding: 2px 5px; letter-spacing: 0.22em; }
+      .btn-nav { padding: 0.45rem 0.8rem; font-size: 0.64rem; white-space: nowrap; }
+      section { padding: 64px 0; }
+      .hero { padding: 72px 0 60px; }
+      .record-inner, .about-inner { grid-template-columns: 1fr; gap: 36px; }
+      .record-aside { position: static; }
+      .about-photo { max-width: 340px; }
+      form { grid-template-columns: 1fr; }
+      .record-list li { grid-template-columns: 1fr; gap: 2px; }
+    }
+    @media (max-width: 540px) {
+      .brand-tag { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Atomic Scaling Ventures — home">
+        <img src="assets/atomic-scaling-logo.jpg" alt="Atomic Scaling" class="brand-logo" />
+        <span class="brand-tag">Ventures</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#focus">Focus</a>
+        <a href="#track-record">Track Record</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#how-we-help">How We Help</a>
+        <a href="#partners">Partners</a>
+        <a href="#about">About</a>
+      </nav>
+      <a href="#founders" class="btn-primary btn-nav">Pitch Your Company</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1 · Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="eyebrow">Atomic Scaling Ventures</p>
+        <h1>Backing ambitious founders from <em>seed to scale</em>.</h1>
+        <p class="lede">
+          Atomic Scaling Ventures is an angel investor and startup accelerator for technology
+          companies. We invest at seed, stay active through Series A, and work alongside founders
+          as a strategic scaling partner — combining capital with the operating method behind
+          <strong>Atomic Scaling</strong> and a network built across two decades of building,
+          exiting and backing technology companies on three continents.
+        </p>
+        <div class="hero-actions">
+          <a href="#founders" class="btn-primary">Pitch Your Company</a>
+          <a href="#partners" class="btn-secondary">Partner With Us</a>
+        </div>
+        <p class="hero-note">Angel investment · Acceleration · Seed → Series A</p>
+        <div class="stat-strip" role="list" aria-label="Track record at a glance">
+          <div class="stat" role="listitem">
+            <span class="stat-figure">2</span>
+            <span class="stat-label">Unicorns in portfolio</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-figure">1</span>
+            <span class="stat-label">Portfolio IPO</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-figure">3</span>
+            <span class="stat-label">Companies founded</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-figure">2</span>
+            <span class="stat-label">Founder exits</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-figure">3</span>
+            <span class="stat-label">Continents invested</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-figure">20+</span>
+            <span class="stat-label">Years operating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Investment Focus -->
+    <section class="section-alt" id="focus">
+      <div class="container">
+        <p class="eyebrow">Investment Focus</p>
+        <h2>Early cheques. <em>Long conviction.</em></h2>
+        <p class="lede">
+          We concentrate on what we know from the inside: technology companies with scalable
+          digital business models, led by small teams that grow revenue faster than headcount.
+        </p>
+        <div class="focus-grid">
+          <article class="card focus-card reveal">
+            <span class="focus-num">01 · Stage</span>
+            <h3>Seed to Series A</h3>
+            <p>
+              First cheques at angel and seed stage, with active support through the Series A.
+              We have been the first investor on the cap table of a company that reached a
+              $1.5B exit — that is the seat we like.
+            </p>
+          </article>
+          <article class="card focus-card reveal">
+            <span class="focus-num">02 · Sectors</span>
+            <h3>Technology &amp; digital</h3>
+            <p>
+              Where we have operated and invested before: gaming and interactive media, AI,
+              fintech and digital assets, e-commerce, and health &amp; longevity — any business
+              built to scale digitally.
+            </p>
+          </article>
+          <article class="card focus-card reveal">
+            <span class="focus-num">03 · Model</span>
+            <h3>Capital + operating method</h3>
+            <p>
+              Angel investment, structured acceleration, and hands-on strategic support built on
+              the Atomic Scaling 3P3R Method® — across North America, Europe and Asia.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · Founder Track Record -->
+    <section id="track-record">
+      <div class="container record-inner">
+        <div>
+          <p class="eyebrow">Founder Track Record</p>
+          <h2>Operator first. <em>Investor by conviction.</em></h2>
+          <p class="lede">
+            Atomic Scaling Ventures is led by Ludovic Bodin — a three-time founder with two
+            exits, and an early investor whose portfolio includes two unicorns and one IPO.
+          </p>
+          <ul class="record-list">
+            <li class="reveal"><span class="k">2 unicorns</span><span>First investor and board member at Chiliz, exited at $1.5B; early backer of ASIG, valued at $2.5B.</span></li>
+            <li class="reveal"><span class="k">1 IPO</span><span>Early investor in Hopium, the Paris-based hydrogen mobility company listed on Euronext Paris.</span></li>
+            <li class="reveal"><span class="k">Follow-on backing</span><span>Portfolio companies subsequently backed by investors including Sequoia Capital and East Ventures.</span></li>
+            <li class="reveal"><span class="k">3 companies, 2 exits</span><span>Founded AuRestaurant.com, Macau.com and Cmune — whose UberStrike reached 30 million players — exiting two.</span></li>
+            <li class="reveal"><span class="k">Endorsed by</span><span>Atomic Scaling, the book behind our method, carries endorsements from founders and investors at firms including Sequoia Capital, Kleiner Perkins and a16z.</span></li>
+          </ul>
+        </div>
+        <aside class="record-aside">
+          <div class="card reveal">
+            <h3>The method</h3>
+            <p>
+              Our acceleration work runs on the 3P3R Method® — People, Playbook, Prediction ×
+              Reach, Retention, Revenue — published in the book
+              <em>Atomic Scaling: How Small Teams Create Huge Growth</em>.
+            </p>
+            <div class="record-links">
+              <a href="https://www.linkedin.com/in/ludovicbodin/" rel="noopener">Ludovic Bodin on LinkedIn →</a>
+              <a href="https://www.atomicscaling.com/about-me" rel="noopener">Full biography →</a>
+              <a href="https://www.atomicscaling.com/testimonials" rel="noopener">Book endorsements →</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 4 · Portfolio -->
+    <section class="section-alt" id="portfolio">
+      <div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Companies we have <em>backed</em>.</h2>
+        <p class="lede">Selected investments. Some positions are undisclosed at the founders’ request.</p>
+        <div class="portfolio-grid">
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">Chiliz</span>
+              <span class="p-meta">Seed · Malta</span>
+            </div>
+            <p class="p-sector">Sports, blockchain &amp; fan engagement</p>
+            <p class="p-role">First investor &amp; board member</p>
+            <p class="p-outcome">Unicorn — exited at $1.5B</p>
+          </article>
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">ASIG</span>
+              <span class="p-meta">Early stage · Singapore</span>
+            </div>
+            <p class="p-sector">Live streaming, e-commerce &amp; gaming</p>
+            <p class="p-role">Investor</p>
+            <p class="p-outcome">Unicorn — valued at $2.5B</p>
+          </article>
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">Hopium</span>
+              <span class="p-meta">Early stage · Paris</span>
+            </div>
+            <p class="p-sector">Hydrogen mobility</p>
+            <p class="p-role">Investor</p>
+            <p class="p-outcome">Listed on Euronext Paris (IPO)</p>
+          </article>
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">Lila Games</span>
+              <span class="p-meta">Early stage · San Francisco</span>
+            </div>
+            <p class="p-sector">Mobile gaming</p>
+            <p class="p-role">Investor</p>
+            <p class="p-outcome">Subsequently backed by Sequoia Capital</p>
+          </article>
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">Fraction</span>
+              <span class="p-meta">Early stage · Bangkok / Singapore</span>
+            </div>
+            <p class="p-sector">Real-world asset fintech</p>
+            <p class="p-role">Investor</p>
+            <p class="p-outcome">Subsequently backed by East Ventures</p>
+          </article>
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">Novos</span>
+              <span class="p-meta">Early stage · New York</span>
+            </div>
+            <p class="p-sector">Longevity &amp; health science</p>
+            <p class="p-role">Investor</p>
+            <p class="p-outcome">Featured in the “Don’t Die” documentary with Bryan Johnson</p>
+          </article>
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">WeStyle</span>
+              <span class="p-meta">Early stage</span>
+            </div>
+            <p class="p-sector">Creative AI</p>
+            <p class="p-role">Investor</p>
+            
+          </article>
+          <article class="card p-card reveal">
+            <div class="p-head">
+              <span class="p-name">Allonia</span>
+              <span class="p-meta">Early stage · France</span>
+            </div>
+            <p class="p-sector">Sovereign AI</p>
+            <p class="p-role">Investor &amp; scaling advisor</p>
+            
+          </article>
+        </div>
+        <p class="portfolio-note">The portfolio also includes undisclosed positions in algorithmic trading and e-commerce fashion. Some investments are confidential at the founders’ request.</p>
+        <p class="advisory-note">
+          <strong>Beyond the portfolio</strong> — through Atomic Scaling’s advisory practice we have
+          also supported <strong>Mercedes-Benz</strong> (digital transformation), <strong>SuySing</strong> ($1B-revenue retail scale-up), <strong>Cur8</strong> (blockchain &amp; art) and <strong>Synchronous</strong> (algorithmic trading).
+        </p>
+      </div>
+    </section>
+
+    <!-- 5 · How We Help -->
+    <section id="how-we-help">
+      <div class="container">
+        <p class="eyebrow">How We Help</p>
+        <h2>What founders get <em>beyond the cheque</em>.</h2>
+        <p class="lede">
+          Everything we offer comes from having done it — built, scaled, exited, listed, and
+          raised follow-on rounds from tier-one investors.
+        </p>
+        <div class="help-grid">
+          <article class="card help-card reveal">
+            <h3>Growth strategy</h3>
+            <p>A scaling roadmap built on the 3P3R Method® — the operating system we use across the portfolio to grow revenue without growing headcount in step.</p>
+          </article>
+          <article class="card help-card reveal">
+            <h3>Product &amp; go-to-market</h3>
+            <p>Positioning, pricing and distribution shaped by operators who have taken consumer and B2B products to global scale, including a game played by 30 million people.</p>
+          </article>
+          <article class="card help-card reveal">
+            <h3>Fundraising preparation</h3>
+            <p>Narrative, deck, model, data room and investor pipeline — run as a disciplined process, drawing on rounds our portfolio has raised from leading venture firms.</p>
+          </article>
+          <article class="card help-card reveal">
+            <h3>Technology &amp; cloud infrastructure</h3>
+            <p>Architecture reviews and guidance on building AI-native, cloud-based products that stay lean as they scale.</p>
+          </article>
+          <article class="card help-card reveal">
+            <h3>International expansion</h3>
+            <p>Market entry across North America, Europe and Asia, guided by first-hand operating experience in Silicon Valley, Paris, China, Hong Kong and Southeast Asia.</p>
+          </article>
+          <article class="card help-card reveal">
+            <h3>Network access</h3>
+            <p>Introductions to the operators, investors and strategic partners around Atomic Scaling — built over twenty years of building and backing technology companies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · For Founders -->
+    <section class="section-alt" id="founders">
+      <div class="container narrow">
+        <p class="eyebrow">For Founders</p>
+        <h2>Pitch your <em>company</em>.</h2>
+        <p class="lede">We read every submission. If there is a fit, we respond — usually within two weeks.</p>
+        <h3>What we look for</h3>
+        <ul class="criteria-list">
+          <li>Seed to Series A technology companies</li>
+          <li>Scalable digital business models — software, platforms, marketplaces and digitally-distributed products</li>
+          <li>Capital-efficient teams that grow revenue faster than headcount</li>
+          <li>Founders open to operating with the Atomic Scaling 3P3R method</li>
+          <li>North America, Europe and Asia</li>
+        </ul>
+        <div class="form-wrap">
+          <form action="https://www.atomicscaling.com/api/subscribe" method="POST">
+            <input type="hidden" name="source" value="ventures-pitch" />
+            <input type="hidden" name="next" value="/thank-you" />
+            <p class="hp" aria-hidden="true">
+              <label for="pf-hp">Leave this field empty</label>
+              <input id="pf-hp" type="text" name="website_url" tabindex="-1" autocomplete="off" />
+            </p>
+            <div class="field">
+              <label for="pf-name">Founder name <span class="req" aria-hidden="true">*</span></label>
+              <input id="pf-name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="pf-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="pf-email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="pf-company">Company <span class="req" aria-hidden="true">*</span></label>
+              <input id="pf-company" name="company" type="text" required autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="pf-website">Website</label>
+              <input id="pf-website" name="website" type="url" placeholder="https://" autocomplete="url" />
+            </div>
+            <div class="field">
+              <label for="pf-stage">Stage <span class="req" aria-hidden="true">*</span></label>
+              <select id="pf-stage" name="stage" required>
+                <option value="" selected disabled>Select stage</option>
+                <option>Pre-seed</option>
+                <option>Seed</option>
+                <option>Series A</option>
+                <option>Later</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pf-location">Location <span class="req" aria-hidden="true">*</span></label>
+              <input id="pf-location" name="location" type="text" required placeholder="City, country" />
+            </div>
+            <div class="field">
+              <label for="pf-sector">Sector <span class="req" aria-hidden="true">*</span></label>
+              <input id="pf-sector" name="sector" type="text" required placeholder="e.g. AI, gaming, fintech" />
+            </div>
+            <div class="field">
+              <label for="pf-funding">Funding sought <span class="req" aria-hidden="true">*</span></label>
+              <input id="pf-funding" name="funding_sought" type="text" required placeholder="e.g. $500k seed" />
+            </div>
+            <div class="field field-full">
+              <label for="pf-traction">Traction <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="pf-traction" name="traction" required placeholder="Users, revenue, growth — the numbers that matter"></textarea>
+            </div>
+            <div class="field">
+              <label for="pf-deck">Deck link</label>
+              <input id="pf-deck" name="deck_url" type="url" placeholder="https:// (DocSend, Drive…)" />
+            </div>
+            <div class="field">
+              <label for="pf-referral">How did you hear about us?</label>
+              <input id="pf-referral" name="referral" type="text" />
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Submit Your Pitch</button>
+            </div>
+            <p class="form-disclaimer">
+              Submitting this form does not constitute an offer, commitment or guarantee of
+              funding, and creates no obligation on either side. Please do not include
+              confidential information you would not share in a first meeting.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · For Investors & Partners -->
+    <section id="partners">
+      <div class="container narrow">
+        <p class="eyebrow">For Investors &amp; Partners</p>
+        <h2>Invest and build <em>alongside us</em>.</h2>
+        <p class="lede">
+          We work with angels, funds and corporate investors on <strong>co-investment</strong> in
+          portfolio companies, <strong>deal flow</strong> from our founder network, and
+          <strong>accelerator partnerships</strong> that bring the Atomic Scaling method to new
+          markets and platforms.
+        </p>
+        <div class="form-wrap">
+          <form action="https://www.atomicscaling.com/api/subscribe" method="POST">
+            <input type="hidden" name="source" value="ventures-partner" />
+            <input type="hidden" name="next" value="/thank-you" />
+            <p class="hp" aria-hidden="true">
+              <label for="pt-hp">Leave this field empty</label>
+              <input id="pt-hp" type="text" name="website_url" tabindex="-1" autocomplete="off" />
+            </p>
+            <div class="field">
+              <label for="pt-name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="pt-name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="pt-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="pt-email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="pt-org">Organization <span class="req" aria-hidden="true">*</span></label>
+              <input id="pt-org" name="organization" type="text" required autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="pt-interest">Interest <span class="req" aria-hidden="true">*</span></label>
+              <select id="pt-interest" name="interest" required>
+                <option value="" selected disabled>Select interest</option>
+                <option>Co-investment</option>
+                <option>Deal flow</option>
+                <option>Accelerator partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field field-full">
+              <label for="pt-message">Message</label>
+              <textarea id="pt-message" name="message" placeholder="Tell us what you have in mind"></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Get in Touch</button>
+            </div>
+            <p class="form-disclaimer">
+              This form is for professional enquiries. Nothing on this site constitutes an offer
+              of securities or investment advice.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · About & Team -->
+    <section class="section-alt" id="about">
+      <div class="container">
+        <p class="eyebrow">About &amp; Team</p>
+        <h2>The people <em>behind the cheques</em>.</h2>
+        <div class="about-inner" style="margin-top: 2.2rem;">
+          <div class="about-photo reveal">
+            <img src="assets/ludovic-bodin.jpg" alt="Ludovic Bodin, Founder &amp; General Partner of Atomic Scaling Ventures" width="400" loading="lazy" />
+            <p class="about-title" style="margin-top:1.1rem;">Founder &amp; General Partner</p>
+            <p class="about-name" style="margin-top:0;">Ludovic Bodin</p>
+            <div class="about-links">
+              <a href="https://www.linkedin.com/in/ludovicbodin/" rel="noopener">LinkedIn →</a>
+              <a href="https://www.atomicscaling.com/about-me" rel="noopener">Full biography →</a>
+            </div>
+          </div>
+          <div class="about-bio reveal">
+            <p>Ludovic Bodin is a three-time entrepreneur, two-time unicorn investor and author of Atomic Scaling. He founded three companies in e-commerce, travel and gaming — AuRestaurant.com, Macau.com and Cmune, whose UberStrike reached 30 million players — exiting two. As an investor he was first investor and board member at Chiliz (exited at $1.5B) and an early backer of ASIG ($2.5B), with a portfolio spanning Silicon Valley, Europe and Asia. He is the creator of the 3P3R Method® and founder of BOBIC Generational Wealth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9 · Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/atomic-scaling-logo.jpg" alt="Atomic Scaling" class="brand-logo" style="height: 22px;" />
+        <span class="brand-tag">Ventures</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="mailto:ludovic@atomicscaling.com">ludovic@atomicscaling.com</a>
+        <a href="https://www.linkedin.com/in/ludovicbodin/" rel="noopener">LinkedIn</a>
+        <a href="https://www.atomicscaling.com" rel="noopener">atomicscaling.com</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <p class="footer-disclaimer">
+        <strong>Investment disclaimer.</strong> Atomic Scaling Ventures invests its own capital.
+        Nothing on this website constitutes an offer of securities, a solicitation of investment,
+        or investment, legal or tax advice. Submissions through this website do not constitute an
+        offer, commitment or guarantee of funding. Any references to past investments and outcomes
+        are historical; past performance is not indicative of future results.
+      </p>
+      <p class="footer-note">© 2026 Ludovic Bodin · Atomic Scaling Ventures · Atomic Scaling Framework® · 3P3R Method®</p>
+    </div>
+  </footer>
+
+  <script>
+    // Subtle scroll-reveal; no-ops for reduced motion (CSS shows content immediately).
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
+    }
+  </script>
+</body>
+</html>

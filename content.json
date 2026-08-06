@@ -1,0 +1,131 @@
+{
+  "_comment": "Source of truth for ventures.atomicscaling.com. Edit this file, run `node build.mjs`, commit. Every entry here must be verifiable — no invented names, metrics or partnerships. Use \"TODO\" strings for missing data; the build fails if a TODO would be rendered publicly.",
+
+  "site": {
+    "url": "https://ventures.atomicscaling.com",
+    "title": "Atomic Scaling Ventures — Backing Ambitious Founders from Seed to Scale",
+    "description": "Atomic Scaling Ventures is an angel investor and startup accelerator backing technology founders from seed to Series A — with capital, the Atomic Scaling operating method, and an operator network across North America, Europe and Asia.",
+    "contactEmail": "ludovic@atomicscaling.com",
+    "linkedin": "https://www.linkedin.com/in/ludovicbodin/",
+    "parentSite": "https://www.atomicscaling.com",
+    "formEndpoint": "https://www.atomicscaling.com/api/subscribe"
+  },
+
+  "stats": [
+    { "figure": "2", "label": "Unicorns in portfolio" },
+    { "figure": "1", "label": "Portfolio IPO" },
+    { "figure": "3", "label": "Companies founded" },
+    { "figure": "2", "label": "Founder exits" },
+    { "figure": "3", "label": "Continents invested" },
+    { "figure": "20+", "label": "Years operating" }
+  ],
+
+  "portfolio": [
+    {
+      "company": "Chiliz",
+      "sector": "Sports, blockchain & fan engagement",
+      "location": "Malta",
+      "stage": "Seed",
+      "year": "TODO-year",
+      "role": "First investor & board member",
+      "outcome": "Unicorn — exited at $1.5B"
+    },
+    {
+      "company": "ASIG",
+      "sector": "Live streaming, e-commerce & gaming",
+      "location": "Singapore",
+      "stage": "Early stage",
+      "year": "TODO-year",
+      "role": "Investor",
+      "outcome": "Unicorn — valued at $2.5B"
+    },
+    {
+      "company": "Hopium",
+      "sector": "Hydrogen mobility",
+      "location": "Paris",
+      "stage": "Early stage",
+      "year": "TODO-year",
+      "role": "Investor",
+      "outcome": "Listed on Euronext Paris (IPO)"
+    },
+    {
+      "company": "Lila Games",
+      "sector": "Mobile gaming",
+      "location": "San Francisco",
+      "stage": "Early stage",
+      "year": "TODO-year",
+      "role": "Investor",
+      "outcome": "Subsequently backed by Sequoia Capital"
+    },
+    {
+      "company": "Fraction",
+      "sector": "Real-world asset fintech",
+      "location": "Bangkok / Singapore",
+      "stage": "Early stage",
+      "year": "TODO-year",
+      "role": "Investor",
+      "outcome": "Subsequently backed by East Ventures"
+    },
+    {
+      "company": "Novos",
+      "sector": "Longevity & health science",
+      "location": "New York",
+      "stage": "Early stage",
+      "year": "TODO-year",
+      "role": "Investor",
+      "outcome": "Featured in the “Don’t Die” documentary with Bryan Johnson"
+    },
+    {
+      "company": "WeStyle",
+      "sector": "Creative AI",
+      "location": "TODO-location",
+      "stage": "Early stage",
+      "year": "TODO-year",
+      "role": "Investor",
+      "outcome": ""
+    },
+    {
+      "company": "Allonia",
+      "sector": "Sovereign AI",
+      "location": "France",
+      "stage": "Early stage",
+      "year": "TODO-year",
+      "role": "Investor & scaling advisor",
+      "outcome": ""
+    }
+  ],
+
+  "undisclosedNote": "The portfolio also includes undisclosed positions in algorithmic trading and e-commerce fashion. Some investments are confidential at the founders’ request.",
+
+  "advisoryClients": [
+    { "name": "Mercedes-Benz", "note": "digital transformation" },
+    { "name": "SuySing", "note": "$1B-revenue retail scale-up" },
+    { "name": "Cur8", "note": "blockchain & art" },
+    { "name": "Synchronous", "note": "algorithmic trading" }
+  ],
+
+  "team": [
+    {
+      "name": "Ludovic Bodin",
+      "title": "Founder & General Partner",
+      "photo": "assets/ludovic-bodin.jpg",
+      "linkedin": "https://www.linkedin.com/in/ludovicbodin/",
+      "bioUrl": "https://www.atomicscaling.com/about-me",
+      "bio": "Ludovic Bodin is a three-time entrepreneur, two-time unicorn investor and author of Atomic Scaling. He founded three companies in e-commerce, travel and gaming — AuRestaurant.com, Macau.com and Cmune, whose UberStrike reached 30 million players — exiting two. As an investor he was first investor and board member at Chiliz (exited at $1.5B) and an early backer of ASIG ($2.5B), with a portfolio spanning Silicon Valley, Europe and Asia. He is the creator of the 3P3R Method® and founder of BOBIC Generational Wealth."
+    }
+  ],
+
+  "criteria": [
+    "Seed to Series A technology companies",
+    "Scalable digital business models — software, platforms, marketplaces and digitally-distributed products",
+    "Capital-efficient teams that grow revenue faster than headcount",
+    "Founders open to operating with the Atomic Scaling 3P3R method",
+    "North America, Europe and Asia"
+  ],
+
+  "legal": {
+    "entityName": "TODO-legal-entity-name",
+    "registration": "TODO-registration-number-and-jurisdiction",
+    "location": "TODO-registered-address"
+  }
+}
