@@ -1,7 +1,7 @@
 # Atomic Scaling Ventures — ventures.atomicscaling.com
 
-Single-page venture site, served as static files from GitHub Pages (`docs/` on `main`),
-same pattern as `atomic-scaling-os` (os.atomicscaling.com).
+Single-page venture site, built into `docs/` and served as static files from ECS
+(nginx container in `Kalibrio/infra`).
 
 ## Editing content
 
@@ -31,15 +31,20 @@ Spam protection: `website_url` honeypot (same convention as the main site).
 
 ## Deploy
 
-1. Push this repo to GitHub as **public** repo `Kalibrio/atomicscaling-ventures`.
-2. GitHub → repo Settings → Pages → Source: **Deploy from a branch**, branch `main`,
-   folder **/docs**. The `docs/CNAME` file sets the custom domain automatically.
-3. Cloudflare (lbodin@gmail.com account, atomicscaling.com zone) → DNS → add record:
-   `CNAME  ventures  kalibrio.github.io` — **DNS only (grey cloud)**, like `os` and
-   `fundraising`.
-4. Back in GitHub Pages settings, wait for the DNS check, then tick **Enforce HTTPS**
-   (certificate provisioning takes a few minutes).
-5. Verify: `https://ventures.atomicscaling.com` loads, both forms submit and land on
+The site is served from ECS via the `Kalibrio/infra` repo (the app lives at
+`infra/apps/atomicscaling/ventures/`, an nginx container that serves its `docs/` copy).
+To deploy after a content change:
+
+1. `node build.mjs` here, commit `content.json` + `docs/` together.
+2. Copy the built site into infra:
+
+   ```bash
+   rsync -av --delete docs/ ~/src/Kalibrio/infra/apps/atomicscaling/ventures/docs/
+   ```
+
+3. Commit and push `Kalibrio/infra` — its pipeline builds the container and deploys
+   to ECS.
+4. Verify: `https://ventures.atomicscaling.com` loads, both forms submit and land on
    the thank-you page, `robots.txt` and `sitemap.xml` resolve.
 
 ## Compliance notes (read before editing copy)
